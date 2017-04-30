@@ -2,7 +2,8 @@
 <h1> <%= blogs.title %></h1>
 
 <% blogs.reverse().forEach(function(blog){ %> 
-<div class="ui raised very padded text container segment cat">
+<div class = "margin">
+<div class="ui raised very padded text container segment">
     <div>
         <h2 class="ui header"><%= blog.title %></h2>
         <h4><%= blog.created.toDateString() %></h4>
@@ -15,7 +16,7 @@
         <a href = "/blog/<%= blog.id %>" class="ui primary button"> Show More </a>
     </div>
 </div>
-
+</div>
 <% }) %> 
 
 <% include partials/footer %>
