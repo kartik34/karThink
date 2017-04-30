@@ -7,7 +7,9 @@ var express    = require("express"),
     
 //APP CONFIG 
 app.set("view engine", "ejs"); 
-mongoose.connect("mongodb://localhost/restful_blog_app"); 
+// mongoose.connect("mongodb://localhost/restful_blog_app"); 
+mongoose.connect("mongodb://kartik:kartik34@ds127341.mlab.com:27341/blogapp"); 
+
 app.use(express.static("public"))
 app.use(bodyparser.urlencoded({extended: true}))
 app.use(methodoverride("_method")); 
