@@ -13,6 +13,7 @@ mongoose.connect("mongodb://kartik:kartik34@ds127341.mlab.com:27341/blogapp");
 app.use(express.static("public"))
 app.use(bodyparser.urlencoded({extended: true}))
 app.use(methodoverride("_method")); 
+
 //MONGOOSE SCHEMA CONFIG
 var blogSchema = new mongoose.Schema({
     title: String,
